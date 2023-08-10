@@ -1,9 +1,36 @@
 .header {
 	width: 100vw;
-	height: 100vh;
-	max-height: 700px;
+	height: 700px;
 	flex-shrink: 0;
 	background-image: url('../../assets/dogs.png');
 	background-size: cover;
 	background-position: center;
+
 }
+
+/* Header.css */
+.header {
+	position: relative; /* Ensure the header acts as the positioning reference */
+	width: 100vw;
+	max-height: 579px;
+	flex-shrink: 0;
+	background-image: url('../../assets/dogs.png'); /* Adjust the path accordingly */
+	background-repeat: no-repeat;
+	background-position: center;
+  }
+  
+  .search-bar-outer-div input {
+	height: 70px;
+	width: 900px;
+  }
+
+  .search-bar-outer-div, .inner-div {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	top: 400px;
+	left: 0;
+	top: 550px;
+  }
+
+  

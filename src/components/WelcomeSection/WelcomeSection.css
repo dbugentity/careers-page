@@ -1,0 +1,13 @@
+.welcome-section {
+    position: absolute;
+    bottom: 200px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    background-color: #CFE5DF;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100vw;
+    z-index: 10;
+  }
