@@ -1,0 +1,28 @@
+.brand-container {
+    width: 100vw;
+    height: 700px;
+  }
+
+.logo {
+  margin-top: 450px;
+}
+
+.logo-text {
+  padding-left: 550px;
+  padding-right: 550px;
+  font-family: Avenir;
+  color: var(--kinship-black, #101820);
+text-align: center;
+font-family: Avenir;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 133.333% */
+margin-top: 40px;
+}
+
+.kinship-brands {
+    margin-top: 40px;
+    text-align: center;
+}
+  
