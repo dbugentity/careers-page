@@ -9,6 +9,7 @@ import {
   Section,
   Img,
 } from "./style";
+import './HorizontalScroll.css';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
@@ -24,7 +25,10 @@ const HorizontalScroll = () => {
   return (
     <>
       <Header>
-        <BackgroundImg src={imgs[1]} alt="background image"  />
+        <div className="overlay">
+          <BackgroundImg src={imgs[1]} alt="background image" data-aos="fade-in" id="bg-img" />
+        </div>
+        
   
         <Paragraph>
           Lorem ipsum dolor sit.

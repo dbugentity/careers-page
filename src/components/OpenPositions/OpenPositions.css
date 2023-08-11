@@ -23,7 +23,12 @@
     font-weight: bold;
     border-bottom: 1.2px solid #97999B;
     width: 90%;
-    margin-left: 90px;
+    margin-left: 90px;  
+}
+
+.heading:hover {
+    color: #FC3F31;
+    cursor: pointer;
 }
 
 .heading,
@@ -81,3 +86,8 @@ font-style: normal;
 font-weight: 500;
 line-height: 90%; /* 16.2px */
 }
+
+.position-row.headings .heading:hover {
+    color: #FC3F31; /* Change this color as needed */
+    transition: color 0.3s ease;
+  }

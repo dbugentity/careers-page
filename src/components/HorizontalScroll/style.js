@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { motion } from "framer-motion";
 
 export const Header = styled.div`
@@ -9,6 +9,32 @@ export const Header = styled.div`
   display: flex;
   flex-direction: column;
   color: black;
+
+  .BackgroundImg::before {
+    margin: 0;
+  padding: 0;
+  overflow-y: overlay;
+  max-height: calc(100vh - 405px - 10px);
+  background-image: repeating-linear-gradient(180deg, #e1e1e1, #e1e1e1 35px, #cdcdcd 35px, #cdcdcd 70px);
+  background-repeat: repeat;
+  background-attachment:scroll;
+  }
+
+  ${props =>
+    props.dark &&
+    css`
+      .BackgroundImg::before {
+        opacity: 0.9;
+
+        margin: 0;
+        padding: 0;
+        overflow-y: overlay;
+        max-height: calc(100vh - 405px - 10px);
+        background-image: repeating-linear-gradient(180deg, #e1e1e1, #e1e1e1 35px, #cdcdcd 35px, #cdcdcd 70px);
+        background-repeat: repeat;
+        background-attachment:scroll;
+      }
+    `}
 `;
 
 export const BackgroundImg = styled.img`
@@ -16,7 +42,6 @@ export const BackgroundImg = styled.img`
   height: 100%;
   object-fit: cover;
   position: absolute;
-  opacity: 0.9;
 `;
 
 export const Title = styled(motion.h1)`
@@ -28,6 +53,7 @@ export const Title = styled(motion.h1)`
   white-space: nowrap;
   margin-top: auto;
   transition: all 2s ease-in-out;
+
 `;
 
 export const Nav = styled.nav`
@@ -49,7 +75,6 @@ export const Paragraph = styled.p`
   max-width: 900px;
   font-size: 74px;
   position: relative;
-  // margin: 17vh;
   left: 5%;
   color: #FFFFFF;
   font-family: Avenir;
@@ -59,10 +84,10 @@ export const Paragraph = styled.p`
 `;
 
 export const Subtitle = styled.h5`
-left: 5%;
-color: #FFFFFF;
+  left: 5%;
+  color: #FFFFFF;
   font-size: 30px;
-`
+`;
 
 export const Img = styled.img`
   width: 50em;
@@ -78,3 +103,5 @@ export const Section = styled.div`
   padding: 10em 0;
   color: black;
 `;
+
+// Rest of your styled components...
