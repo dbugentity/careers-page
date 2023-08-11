@@ -1,6 +1,6 @@
 .header {
   width: 100vw;
-  height: 700px;
+  height: 750px;
   flex-shrink: 0;
   background-image: url('../../assets/dogs.png');
   background-size: cover;
