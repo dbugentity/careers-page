@@ -19,13 +19,13 @@ const OpenPositions = () => {
     <div className="open-positions-section">
       <div className="position-list">
         <div className="position-row headings">
-          <div className="underline"></div>
+          <div className="underline" data-aos="fade-right"></div>
           <div className="heading job-title">Job Title</div>
           <div className="heading">Location</div>
           <div className="heading">Department</div>
         </div>
         {openPositionsData.map((position, index) => (
-          <div className="position-row underline" key={index}>
+          <div className="position-row underline" key={index} data-aos="fade-in" >
             <div className={`cell job-title-cell`}>{position.jobTitle}</div>
             <div className="cell">{position.location}</div>
             <div className="cell">{position.department}</div>

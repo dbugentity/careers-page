@@ -1,10 +1,14 @@
 .brand-container {
   width: 100vw;
   height: 700px;
+
+  
 }
 
 .logo {
   margin-top: 450px;
+
+  
 }
 
 .logo-text {
@@ -22,6 +26,9 @@
 }
 
 .kinship-brands {
-  margin: 60px;
-  text-align: center;
+  display: flex;
+  position: absolute;
+  left: 27%;
+  margin-top: 50px;
+  
 }

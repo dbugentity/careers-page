@@ -1,15 +1,16 @@
 .header {
-  width: 100vw;
+  /* width: 200vmin; */
   height: 750px;
   flex-shrink: 0;
-  background-image: url('../../assets/dogs.png');
+  background-image: url('../../assets/headerImg.png');
   background-size: cover;
-  background-position: center;
+  object-position: center;
+  object-fit: cover;
 }
 
 .search-bar-outer-div input {
-  height: 70px;
-  width: 900px;
+  height: 7vmin;
+  width: 80vmin;
   border: none;
 }
 
