@@ -1,22 +1,18 @@
-/* Navbar.css */
 .navbar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 50px;
-    padding: 0 20px;
-    color: #FC3F31;
-    font-weight: 600;
-    font-size: large;
-  }
-  
-  .nav-item {
-    cursor: pointer;
-  }
-  
-  .separator {
-    margin: 0 10px; /* Equal spacing around the separator */
-  }
-  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  color: #FC3F31;
+  font-weight: 600;
+  font-size: large;
+}
 
-  
+.nav-item {
+  cursor: pointer;
+}
+
+.separator {
+  margin: 0 10px;
+}
