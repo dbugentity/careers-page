@@ -1,8 +1,8 @@
 .header {
   /* width: 200vmin; */
-  height: 750px;
-  flex-shrink: 0;
-  background-image: url('../../assets/headerImg.png');
+  /* height: 750px; */
+  /* flex-shrink: 0; */
+  /* background-image: url('../../assets/headerImg.png'); */
   background-size: cover;
   object-position: center;
   object-fit: cover;

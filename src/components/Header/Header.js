@@ -2,12 +2,17 @@ import React, {useEffect} from 'react';
 import './Header.css';
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import { useScroll, useTransform } from "framer-motion";
+
 
 const Header = () => {
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0, 1], [0, 600]);
   useEffect(()=> {
     AOS.init({duration: 2500});
   }, [])
   return (
+    <>
     <div className="header" data-aos="fade-down">
       <div className="inner-div" data-aos="fade-up">
         <h3 className='welcome' >Welcome</h3>
@@ -16,9 +21,10 @@ const Header = () => {
           <p className='welcomeTextTwo' data-aos="zoom-in">Interested? Learn more about our open roles below.</p>
       </div>
       <div className="search-bar-outer-div">
-        <input type="text" placeholder="Find your role" />
+        <input type="text" placeholder="Find your role" className='input' />
       </div>
     </div>
+    </>
   );
 };
 
