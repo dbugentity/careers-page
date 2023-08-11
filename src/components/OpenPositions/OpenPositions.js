@@ -9,9 +9,9 @@ const OpenPositions = () => {
   }, [])
 
   const openPositionsData = [
-    { jobTitle: "Frontend Developer", location: "New York", department: "Engineering" },
-    { jobTitle: "UX Designer", location: "San Francisco", department: "Design" },
-    { jobTitle: "Data Scientist", location: "Remote", department: "Data Science" },
+    { jobTitle: "Managing Editor, The Wildest", location: "New York", department: "Kinship" },
+    { jobTitle: "Principal Software Engineer, React Native", location: "San Francisco", department: "Technology" },
+    { jobTitle: "Principal Software Engineer, React Native", location: "New York", department: "Technology" },
     // Dummy data for now
   ];
 
@@ -29,6 +29,7 @@ const OpenPositions = () => {
             <div className={`cell job-title-cell`}>{position.jobTitle}</div>
             <div className="cell">{position.location}</div>
             <div className="cell">{position.department}</div>
+            <p className="learn-more">Learn more → </p>
           </div>
         ))}
       </div>

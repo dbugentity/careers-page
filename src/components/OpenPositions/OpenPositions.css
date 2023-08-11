@@ -72,3 +72,12 @@
     line-height: 90%;
     /* 16.2px */
 }
+
+.learn-more {
+    color: var(--kinship-black, #101820);
+font-family: Avenir;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 90%; /* 16.2px */
+}
