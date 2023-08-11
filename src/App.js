@@ -14,16 +14,12 @@ function App() {
       <Navbar />
       <Header />
       <HorizontalScroll />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
-
-     
-      {/* <Brands /> */}
-      {/* <OpenPositions /> */}
+    
+     <section style={{marginTop: "24rem", paddingBottom: "2em"}}>
+      <Brands />
+     </section>
+      
+      <OpenPositions />
       {/* <Footer /> */}
     </div>
   );

@@ -11,6 +11,7 @@
 .search-bar-outer-div input {
   height: 7vmin;
   width: 80vmin;
+  margin-top: 17em;
   border: none;
 }
 
@@ -19,17 +20,16 @@
   width: 100%;
   height: 50px;
   position: absolute;
-  top: 400px;
   left: 0;
   top: 710px;
 }
 
 .inner-div {
-  /* top: 750px; */
+  top: 750px;
   background-color: #CFE5DF;
-  height: 400px;
+  height: 700px;
   color: black;
-  padding-top: 200px;
+  padding-top: 19em;
 }
 
 .welcome {
@@ -41,7 +41,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 90%;
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 .welcomeText {
@@ -54,7 +54,7 @@
   line-height: 24px;
   max-width: 800px;
   margin: 50px auto 0;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .welcomeTextTwo {

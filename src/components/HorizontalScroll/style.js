@@ -22,7 +22,7 @@ export const BackgroundImg = styled.img`
 export const Title = styled(motion.h1)`
   font-family: Avenir;
   color: white;
-  font-size: 10em;
+  font-size: 8.7em;
   z-index: 1;
   margin: 0;
   white-space: nowrap;
@@ -54,7 +54,8 @@ export const Paragraph = styled.p`
   color: #FFFFFF;
   font-family: Avenir;
   font-weight: 800;
-  width: 400px;
+  width: 500px;
+  text-align: left;
 `;
 
 export const Subtitle = styled.h5`

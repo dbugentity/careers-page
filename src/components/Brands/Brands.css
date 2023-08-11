@@ -6,9 +6,7 @@
 }
 
 .logo {
-  /* margin-top: 450px; */
-
-  
+  margin-top: 20em;
 }
 
 .logo-text {
@@ -29,6 +27,6 @@
   display: flex;
   position: absolute;
   left: 27%;
-  margin-top: 50px;
+  margin-top: 80px;
   
 }

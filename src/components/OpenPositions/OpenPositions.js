@@ -25,7 +25,9 @@ const OpenPositions = () => {
           <div className="heading">Department</div>
         </div>
         {openPositionsData.map((position, index) => (
-          <div className="position-row underline" key={index} data-aos="fade-in" >
+          <div className="position-row underline" key={index} 
+          data-aos="zoom-in"
+          data-aos-anchor-placement="center" >
             <div className={`cell job-title-cell`}>{position.jobTitle}</div>
             <div className="cell">{position.location}</div>
             <div className="cell">{position.department}</div>
