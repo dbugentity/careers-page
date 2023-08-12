@@ -21,8 +21,9 @@ function App() {
 
       
       /**
-       * 3rd part of the page here with sone floating content/elements after 1. locomotive text slide in,
-       *  2. parallax  
+       * 3rd part of the page here with sone floating content/elements after 1. locomotive header/text slide in first,
+       *  2. parallax background slide up, 3. conventional design with snageed up text animations
+       * 4. animated timeline
        */
 
       ////////////////
