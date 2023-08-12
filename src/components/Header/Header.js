@@ -8,6 +8,7 @@ const Header = () => {
   useEffect(()=> {
     AOS.init({duration: 2500});
   }, [])
+  
   const { scrollYProgress } = useScroll();
   const x = useTransform(scrollYProgress, [0, 1], [0, 600]);
 
