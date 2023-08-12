@@ -7,7 +7,7 @@ import Brands from "./components/Brands/Brands";
 import OpenPositions from "./components/OpenPositions/OpenPositions";
 import Footer from "./components/Footer/Footer";
 import HorizontalScroll from "./components/HorizontalScroll/HorizontalScroll";
-import AppTwo from "./components/AppTwo";
+import AppTwo from "./AppTwo";
 
 function App() {
   return (
