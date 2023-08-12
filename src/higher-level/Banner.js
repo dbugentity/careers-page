@@ -32,9 +32,9 @@ const Banner = () => {
   }, []);
   return (
     <motion.div className='banner' variants={banner}>
-      <BannerRowTop title={"brand"} />
-      <BannerRowCenter title={"experience"} playMarquee={playMarquee} />
-      <BannerRowBottom title={"studio"} />
+      <BannerRowTop title={"Kinship"} />
+      <BannerRowCenter title={"better world"} playMarquee={playMarquee} />
+      <BannerRowBottom title={"pets"} />
     </motion.div>
   );
 };
@@ -71,8 +71,7 @@ const BannerRowTop = ({ title }) => {
         }}
         className='row-col'>
         <span className='row-message'>
-          We are specialised in setting up the foundation of your brand and
-          setting you up for success.
+          
         </span>
       </motion.div>
     </div>
@@ -86,7 +85,7 @@ const BannerRowBottom = ({ title }) => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ ease: [0.6, 0.01, 0.05, 0.95], duration: 1, delay: 1 }}
-        className='scroll'>
+        className=''>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -95,7 +94,7 @@ const BannerRowBottom = ({ title }) => {
             duration: 1,
             delay: 1.8,
           }}>
-          scroll
+    
         </motion.span>
         <motion.span
           initial={{ opacity: 0 }}
@@ -105,7 +104,7 @@ const BannerRowBottom = ({ title }) => {
             duration: 1,
             delay: 1.8,
           }}>
-          down
+
         </motion.span>
       </motion.div>
       <AnimatedLetters title={title} />

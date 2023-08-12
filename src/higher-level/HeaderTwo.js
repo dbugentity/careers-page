@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Header = () => {
+const HeaderTwo = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -180 }}
+    <div
+      initial={{ opacity: 0, y: 80 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
         ease: "easeInOut",
@@ -13,15 +13,14 @@ const Header = () => {
       }}
       className='header'>
       <div className='header-inner'>
-        <div className='logo'>Kinshup</div>
-
+        <div className='logo'>Kin</div>
           <li>
             <a href='/design'>Careers</a>
           </li>
           
       </div>
-    </motion.div>
+    </div>
   );
 };
 
-export default Header;
+export default HeaderTwo;

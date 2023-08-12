@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -56,16 +57,16 @@ const Loader = ({ setLoading }) => {
         exit="exit"
         className="loader-inner"
       >
-        <ImageBlock variants={item} id="image-1" posX={undefined} posY={undefined} />
+        <ImageBlock variants={item} id="image-3" />
         <motion.div variants={itemMain} className="transition-image">
           <motion.img
             layoutId="main-image-1"
-            src={process.env.PUBLIC_URL + `/images/2.jpg`}
+            src={process.env.PUBLIC_URL + `/images/3.png`}
           />
         </motion.div>
-        <ImageBlock variants={item} id="image-3" posX={undefined} posY={undefined} />
-        <ImageBlock variants={item} id="image-4" posX={undefined} posY={undefined} />
-        <ImageBlock variants={item} id="image-5" posX={undefined} posY={undefined} />
+        <ImageBlock variants={item} id="image-3" />
+        <ImageBlock variants={item} id="image-4" />
+        <ImageBlock variants={item} id="image-5" />
       </motion.div>
     </motion.div>
   );

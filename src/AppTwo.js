@@ -1,17 +1,18 @@
 // @ts-nocheck
 import React, {useEffect, useRef, useState} from 'react';
-import './AppTwo.css';
+// import './AppTwo.css';
 import {LocomotiveScrollProvider} from "react-locomotive-scroll";
 // import Banner from './Banner';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import { useScroll, useTransform } from 'framer-motion';
 import dogs from "./assets/old/hachiko.jpg";
-import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
-// import "../src/sass/main.scss";
-import Header from "./higher-level/Header"
+import { motion } from "framer-motion";
+import "./sass/main.scss";
+import Header from "./higher-level/HeaderTwo"
 import Banner from "./higher-level/Banner"
 import Loader from "./higher-level/Loader"
+import HeaderTwo from './higher-level/HeaderTwo';
 
 
 function AppTwo() {
@@ -39,29 +40,31 @@ function AppTwo() {
   return (
     <LocomotiveScrollProvider options={options} containerRef={ref}>
 
-<AnimateSharedLayout type='crossfade'>
-      <AnimatePresence>
+<div type='crossfade'>
+      <div>
         {loading ? (
           <motion.div key='loader'>
             <Loader setLoading={setLoading} />
           </motion.div>
         ) : (
           <>
-            <Header />
+          <HeaderTwo />
+      
             <Banner />
             {!loading && (
               <div className='transition-image final'>
                 <motion.img
                   transition={{ ease: [0.6, 0.01, 0.05, 0.9], duration: 1.6 }}
-                  src={process.env.PUBLIC_URL + `/images/2.jpg`}
+                  // src={process.env.PUBLIC_URL + `/images/2.jpg`}
+
                   layoutId='main-image-1'
                 />
               </div>
             )}
           </>
         )}
-      </AnimatePresence>
-    </AnimateSharedLayout>
+      </div>
+    </div>
 
 
 

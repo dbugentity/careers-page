@@ -11,7 +11,7 @@ import AppTwo from "./AppTwo";
 
 function App() {
   return (
-    <div className="">
+    <div className="App">
       <AppTwo />
       
     </div>
