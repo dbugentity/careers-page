@@ -1,10 +1,18 @@
-import React, {useEffect, useRef} from 'react';
+// @ts-nocheck
+import React, {useEffect, useRef, useState} from 'react';
 import './AppTwo.css';
 import {LocomotiveScrollProvider} from "react-locomotive-scroll";
 // import Banner from './Banner';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import { useScroll, useTransform } from 'framer-motion';
+import dogs from "./assets/old/hachiko.jpg";
+import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+// import "../src/sass/main.scss";
+import Header from "./higher-level/Header"
+import Banner from "./higher-level/Banner"
+import Loader from "./higher-level/Loader"
+
 
 function AppTwo() {
   const ref = useRef(null);
@@ -12,8 +20,17 @@ function AppTwo() {
     smooth: true,
   };
 
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    loading
+      ? document.querySelector("body").classList.add("loading")
+      : document.querySelector("body").classList.remove("loading");
+  }, [loading]);
+
   useEffect(()=> {
-    AOS.init({duration: 2500});
+    AOS.init({
+      duration: 2500,
+    })
   }, []);
   
   const { scrollYProgress } = useScroll();
@@ -21,6 +38,34 @@ function AppTwo() {
 
   return (
     <LocomotiveScrollProvider options={options} containerRef={ref}>
+
+<AnimateSharedLayout type='crossfade'>
+      <AnimatePresence>
+        {loading ? (
+          <motion.div key='loader'>
+            <Loader setLoading={setLoading} />
+          </motion.div>
+        ) : (
+          <>
+            <Header />
+            <Banner />
+            {!loading && (
+              <div className='transition-image final'>
+                <motion.img
+                  transition={{ ease: [0.6, 0.01, 0.05, 0.9], duration: 1.6 }}
+                  src={process.env.PUBLIC_URL + `/images/2.jpg`}
+                  layoutId='main-image-1'
+                />
+              </div>
+            )}
+          </>
+        )}
+      </AnimatePresence>
+    </AnimateSharedLayout>
+
+
+
+      
       <div data-scroll-section>
            <main data-scroll-container ref={ref} className='container'>
 
@@ -29,20 +74,23 @@ function AppTwo() {
         data-scroll-speed="4"
           data-scroll-section
     >
-          <h1 className="c-header_title is-inview" data-scroll>
-            <span className="is-inview" data-scroll data-scroll-speed="3" data-aos="fade-dowm-flip">
+          <h1 className="c-header_title is-inview" data-aos="flip-down">
+            <span className="is-inview" data-aos="flip-up"  style={{
+                  transform: `translate3d(0, ${x}px, 0px)`, 
+                }}>
               Kinship.
               </span>
-              <span className="c-header_title_line u-white">
+              <span className="c-header_title_line u-white" data-aos="flip-up">
                 V4.X
                 </span>
           </h1>
-         
+        </section>
 
-        </section>
         <section className="contents" data-scroll-section>
-          <h1>Lorem Ipsum</h1>
+          {/* <h1>Lorem Ipsum</h1> */}
+          {/* <img src={dogs} alt="" style={{height: "50vh", width: "80vw"}} /> */}
         </section>
+
         <section className="footer" data-scroll-section>
           <h1>Footer</h1>
         </section>
