@@ -13,48 +13,53 @@ function App() {
 
   const options = {
     smooth: true,
-  } 
+  }
   return (
     <>
-     <LocomotiveScrollProvider options={options} containerRef={ref}>
-      
-      <main data-scroll-container ref={ref}>
-        <section className="intro"
-        
+      <LocomotiveScrollProvider options={options} containerRef={ref}>
 
-      //** 
+        <main data-scroll-container ref={ref}>
+          <section className="intro"
 
 
-      
-      /**
-       * 3rd part of the page here with sone floating content/elements after 1. locomotive header/text slide in first,
-       *  2. parallax background slide up, 3. conventional design with snageed up text animations
-       * 4. animated timeline
-       */
+            //** 
 
-      ////////////////
-        data-scroll-speed="9"
-          data-scroll-section>
+
+
+            /**
+             * 3rd part of the page here with sone floating content/elements after 1. locomotive header/text slide in first,
+             *  2. parallax background slide up, 3. conventional design with snageed up text animations
+             * 4. animated timeline
+             */
+
+            ////////////////
+            data-scroll-speed="9"
+            data-scroll-section>
+
+            <div className="wrapper-1">
+              <div className="new-logo">
+                <span className="re">RE</span>
+                volution
+              </div>
+              <span className="volume"></span>
+            </div>
+
+
+            <div className="hachi"><img className="hach" src={img1} alt="" /></div>
+            <div className="landing-page-interaction">
+            </div>
+
+            <div >
+              <a class="button0" data-slide="1" >
+              <input id="round" className="input" type="submit" value="START EXPERIENCE" />
+            </a>
+            </div>
+   
             
-          <div className="hachi"  ><img  className="hach" src={img1} alt="" /></div>
-        </section>
-
-
-
-
-        <section className="contents" data-scroll-section>
-          <h1 data-scroll
-            data-scroll-direction="horizontal"
-            data-scroll-speed="2">I Love React</h1>
-          <h1  data-scroll
-            data-scroll-direction="vertical"
-            data-scroll-speed="9" >And my dog</h1>
-        </section>
-        <section className="footer" data-scroll-section>
-          <h1>Let's end the application with this Footer</h1>
-        </section>
-      </main>
-    </LocomotiveScrollProvider>
+          </section>
+x
+        </main>
+      </LocomotiveScrollProvider>
 
 
     </>

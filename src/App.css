@@ -43,8 +43,6 @@ section {
 }
 
 
-
-
 html.has-scroll-smooth {
   overflow: hidden; 
 }
@@ -159,3 +157,28 @@ content{
   width: 30vw;
   height: 500px;
 } */
+
+.landingpage-interaction{
+  bottom: 500px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+z-index: 3;
+  width: 237px;
+}
+
+.new-logo {
+  .re {
+    color: red;
+    font-size: 34px;
+    margin-left: 0.5px;
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+
+  color: rgb(70, 67, 67);
+  font-size: 39px;
+  text-transform: uppercase;
+}
+
