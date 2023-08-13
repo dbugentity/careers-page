@@ -48,9 +48,9 @@ function AppTwo() {
           </motion.div>
         ) : (
           <>
-          <HeaderTwo />
+          {/* <HeaderTwo /> */}
       
-            <Banner />
+            {/* <Banner /> */}
             {!loading && (
               <div className='transition-image final'>
                 <motion.img

@@ -13,7 +13,7 @@ const HeaderTwo = () => {
       }}
       className='header'>
       <div className='header-inner'>
-        <div className='logo'>Kin</div>
+
           <li>
             <a href='/design'>Careers</a>
           </li>

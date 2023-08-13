@@ -1,6 +1,9 @@
 // @ts-nocheck
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useScroll, useTransform } from "framer-motion";
 
 const banner = {
   animate: {
@@ -23,6 +26,13 @@ const letterAni = {
 };
 
 const Banner = () => {
+  useEffect(()=> {
+    AOS.init({duration: 2500});
+  }, []);
+  
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0, 1], [0, 600]);
+
   const [playMarquee, setPlayMarquee] = useState(false);
 
   useEffect(() => {
@@ -30,11 +40,12 @@ const Banner = () => {
       setPlayMarquee(true);
     }, 2000);
   }, []);
+
   return (
-    <motion.div className='banner' variants={banner}>
-      <BannerRowTop title={"Kinship"} />
+    <motion.div className='banner' variants={banner} data-aos="flip-left">
+      <BannerRowTop title={"Kinship"}  />
       <BannerRowCenter title={"better world"} playMarquee={playMarquee} />
-      <BannerRowBottom title={"pets"} />
+      <BannerRowBottom title={"for pets."}  />
     </motion.div>
   );
 };
@@ -70,10 +81,13 @@ const BannerRowTop = ({ title }) => {
           delay: 0.4,
         }}
         className='row-col'>
-        <span className='row-message'>
-          
-        </span>
+        {/* <span className='row-message'>
+          hello
+        </span> */}
       </motion.div>
+      <span className='row-message'>
+          hello
+        </span>
     </div>
   );
 };
