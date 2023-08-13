@@ -1,0 +1,56 @@
+/* Slideshow container */
+.slideshow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Main slide */
+  .slide {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .slide img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Landscape slides */
+  .landscape-slides {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding: 10px;
+  }
+  
+  .landscape-slide {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .landscape-slide img {
+    width: 100%;
+  }
+  
+  .landscape-slide.active {
+    transform: scale(1.2); /* Adjust the scale as needed for the parallax effect */
+  }
+  
+  /* Next button (adjust styles as needed) */
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
