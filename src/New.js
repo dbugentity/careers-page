@@ -15,7 +15,7 @@ import Loader from "./higher-level/Loader"
 import HeaderTwo from './higher-level/HeaderTwo';
 
 
-function AppTwo() {
+function New() {
   const ref = useRef(null);
   const options = {
     smooth: true,
@@ -39,40 +39,11 @@ function AppTwo() {
 
   return (
     <LocomotiveScrollProvider options={options} containerRef={ref}>
-
-<div type='crossfade'>
-      <div>
-        {loading ? (
-          <motion.div key='loader'>
-            <Loader setLoading={setLoading} />
-          </motion.div>
-        ) : (
-          <>
-          <HeaderTwo />
-      
-            <Banner />
-            {!loading && (
-              <div className='transition-image final'>
-                <motion.img
-                  transition={{ ease: [0.6, 0.01, 0.05, 0.9], duration: 1.6 }}
-                  // src={process.env.PUBLIC_URL + `/images/2.jpg`}
-
-                  layoutId='main-image-1'
-                />
-              </div>
-            )}
-          </>
-        )}
-      </div>
-    </div>
-
-
-
       
       <div data-scroll-section>
            <main data-scroll-container ref={ref} className='container'>
 
-        <section className="intro"
+        {/* <section className="intro-two"
       data-scroll //This attribute makes this section an independent scrollable container
         data-scroll-speed="4"
           data-scroll-section
@@ -87,15 +58,11 @@ function AppTwo() {
                 V4.X
                 </span>
           </h1>
-        </section>
+        </section> */}
 
         <section className="contents" data-scroll-section>
-          {/* <h1>Lorem Ipsum</h1> */}
-          {/* <img src={dogs} alt="" style={{height: "50vh", width: "80vw"}} /> */}
-        </section>
-
-        <section className="footer" data-scroll-section>
-          <h1>Footer</h1>
+          <h1>Lorem Ipsum</h1>
+          <img src={dogs} alt="" style={{height: "50vh", width: "80vw"}} />
         </section>
       </main>
       </div>
@@ -103,4 +70,4 @@ function AppTwo() {
     </LocomotiveScrollProvider>
   );
 }
-export default AppTwo;
+export default New;

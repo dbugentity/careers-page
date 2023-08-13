@@ -22,9 +22,15 @@ section {
   align-items: center;
   justify-content: center;
 }
+
 .intro{
-  background-color: black;
+
+  background: url(../public/images/6ea22cea49e1d7500fa27cd14a66f8ad.jpg) center center no-repeat;
+
+
 }
+
+
 .contents {
   background-color: rgb(173, 149, 93);
 }
@@ -126,4 +132,22 @@ html.has-scroll-dragging {
   [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
     right: auto;
     bottom: 0; 
+}
+
+
+
+.film1 {
+  width: 80%;
+height: 100%;
+margin: 0 auto;
+position: relative;
+}
+
+#slide1 {
+  background: url(../public/images/firedogs.jpg) center center no-repeat;
+    background-size: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
