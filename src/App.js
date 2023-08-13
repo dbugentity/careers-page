@@ -3,6 +3,9 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRef } from "react";
 import React from "react";
 import "./App.css";
+// import FirstPage from "./components/Timeline/first-page/FirstPage";
+import img1 from './assets/old/okkkk.png';
+
 
 
 function App() {
@@ -12,10 +15,13 @@ function App() {
     smooth: true,
   } 
   return (
+    <>
      <LocomotiveScrollProvider options={options} containerRef={ref}>
+      
       <main data-scroll-container ref={ref}>
         <section className="intro"
-      data-scroll 
+        
+
       //** 
 
 
@@ -29,8 +35,13 @@ function App() {
       ////////////////
         data-scroll-speed="9"
           data-scroll-section>
-          <h1>This is the Introduction section</h1>
+            
+          <div className="hachi"  ><img  className="hach" src={img1} alt="" /></div>
         </section>
+
+
+
+
         <section className="contents" data-scroll-section>
           <h1 data-scroll
             data-scroll-direction="horizontal"
@@ -44,6 +55,9 @@ function App() {
         </section>
       </main>
     </LocomotiveScrollProvider>
+
+
+    </>
   );
 }
 

@@ -23,10 +23,11 @@ section {
   justify-content: center;
 }
 .intro{
-  background-color: black;
+  background-color: #DBDBD9;
+   color: #756C69;
 }
 .contents {
-  background-color: rgb(173, 149, 93);
+  background-color: #DBDBD9;
 }
 #stick {
   background-color: rgb(71, 14, 64);
@@ -127,3 +128,34 @@ html.has-scroll-dragging {
     right: auto;
     bottom: 0; 
 }
+
+
+/* // TIMELINE // */
+
+content{
+  height : 100vh;
+  display : flex;
+  flex-direction : column;
+  align-items: center;
+  justify-content : space-around;
+}
+
+
+.ex{
+  flex:2;
+  display : flex;
+}
+.ex p{
+  align-self: flex-end;
+}
+
+.hachi {
+  display: flex;
+  justify-content: center;
+  height: 900px;
+}
+/* 
+.hach {
+  width: 30vw;
+  height: 500px;
+} */

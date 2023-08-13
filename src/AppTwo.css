@@ -37,11 +37,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #bab6b4;
 }
 
 .intro{
-  background: #1A0A05;
-  background: var(--primary-colors-kin-brown, #bab6b4);
+  /* background: #1A0A05; */
+  background-color: #bab6b4;
   /* padding: 2.5rem 0; */
   perspective: 600px;
   -webkit-perspective: 600px;
